@@ -1,3 +1,12 @@
+#my
+*.setting
+.setting/*
+*.target
+.target/**
+*.classpath
+*.project
+
+
 # Compiled class file
 *.class
 
