@@ -5,6 +5,8 @@
 **.settings**
 **.classpath
 **target
+arithmetic-java/target/**
+arithmetic-java/.settings/**
 **.project
 **.iml
 .idea/**
