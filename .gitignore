@@ -1,10 +1,14 @@
-#my
-*.setting
-.setting/*
-*.target
-.target/**
-*.classpath
-*.project
+#my folder
+/.metadata/
+/.metadata/*
+
+**.settings**
+**.classpath
+**target
+**.project
+**.iml
+.idea/**
+**DS_Store
 
 
 # Compiled class file
