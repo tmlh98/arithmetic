@@ -5,13 +5,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+import xyz.tmlh.airthmetic.util.ArraysUtil;
+
 /*
  * 快排,Stack版
  */
 public class QuickSort2 {
 
     public static void main(String[] args) {
-        int[] arr = {52, 25, 32, 68, 76, 13, 4, 12, 77, 13, 23, 59, 95, 79, 96, 10, 65, 73, 51, 28};
+        int[] arr = ArraysUtil.genArray(20);
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
@@ -57,7 +59,7 @@ public class QuickSort2 {
     }
 
     private static int getPivot(int[] arr, int left, int right) {
-        //记录出事基准值位置
+        //记录初始基准值位置
         int pivotIndex = left;
         //获取基准值
         int pivotVal = arr[pivotIndex];
