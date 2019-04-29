@@ -42,4 +42,13 @@ public class ArraysUtil {
         return arr;
     }
     
+    /**
+     * 交换两个数组的位置
+     */
+    public static void swap(int[] arr, int x, int y) {
+        int tmp = arr[x];
+        arr[x] = arr[y];
+        arr[y] = tmp;
+    }
+    
 }
