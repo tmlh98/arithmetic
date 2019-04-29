@@ -1,6 +1,6 @@
 package xyz.tmlh.airthmetic.sort;
 
-import xyz.tmlh.airthmetic.util.PrintArraysUtil;
+import xyz.tmlh.airthmetic.util.ArraysUtil;
 
 /**
  * 冒泡
@@ -10,15 +10,15 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {5, 8, 6, 3, 9, 2, 1, 7};
         System.out.println("source arr");
-        PrintArraysUtil.printArrays(arr);
+        ArraysUtil.printArray(arr);
         sort2(arr);
         System.out.println("new arr");
-        PrintArraysUtil.printArrays(arr);
+        ArraysUtil.printArray(arr);
 
         System.out.println("-----------------------");
         int[] arr3 = new int[] {3, 4, 2, 1, 5, 6, 7, 8};
         sort3(arr3);
-        PrintArraysUtil.printArrays(arr3);
+        ArraysUtil.printArray(arr3);
     }
 
     /*
@@ -73,7 +73,6 @@ public class BubbleSort {
             // 有序标记，每一轮的初始是true
             boolean isSorted = true;
             for (int j = 0; j < jborder; j++) {
-                PrintArraysUtil.printArrays(arr);
                 if (arr[j] > arr[j + 1]) {
                     temp = arr[j];
                     arr[j] = arr[j + 1];

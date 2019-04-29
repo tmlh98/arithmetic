@@ -11,7 +11,7 @@ import java.util.Stack;
 public class QuickSort2 {
 
     public static void main(String[] args) {
-        int[] arr = new int[] {4, 7, 6, 5, 3, 2, 8, 1};
+        int[] arr = {52, 25, 32, 68, 76, 13, 4, 12, 77, 13, 23, 59, 95, 79, 96, 10, 65, 73, 51, 28};
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
@@ -56,28 +56,27 @@ public class QuickSort2 {
 
     }
 
-    private static int getPivot(int[] arr, int startIndex, int endIndex) {
-        int pivot = arr[startIndex];
-        int left = startIndex;
-        int right = endIndex;
-        while (left < right) {
-            while (left < right) {
-                if (arr[right] <= pivot) {
-                    // 切换指针
+    private static int getPivot(int[] arr, int left, int right) {
+        //记录出事基准值位置
+        int pivotIndex = left;
+        //获取基准值
+        int pivotVal = arr[pivotIndex];
+        while (right > left) {
+            while (right > left) {
+                if(arr[right] <= pivotVal) {
                     break;
                 }
-                right--;
+                right -- ;
             }
-
-            while (left < right) {
-                if (arr[left] > pivot) {
+            while (right > left) {
+                if(arr[left] > pivotVal) {
                     break;
                 }
-                left++;
+                left ++;
             }
             exchange(arr, left, right);
         }
-        exchange(arr, left, startIndex);
+        exchange(arr, pivotIndex, left);
         return left;
     }
 
