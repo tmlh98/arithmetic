@@ -40,4 +40,5 @@ public interface Stack<E> {
      * @return E
      */
     public E peek();
+
 }

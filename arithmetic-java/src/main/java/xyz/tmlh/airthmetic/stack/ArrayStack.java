@@ -9,18 +9,15 @@ package xyz.tmlh.airthmetic.stack;
  * @since 2019年5月6日上午11:12:20
  */
 @SuppressWarnings("unchecked")
-public class ArrayStack<E> {
+public class ArrayStack<E> implements Stack<E>{
     
     //基于数组实现
-    private Object[] datas = null;
+    private Object[] datas;
     
     private int top =-1;  //栈顶指针
     
     private int size = 1 << 4; //栈容量
-    
-    /**
-     * 默认初始化一个长度为16的栈
-     */
+
     public ArrayStack() {
         this.datas = new Object[size];
     }
@@ -29,59 +26,38 @@ public class ArrayStack<E> {
         this.size = initSize;
         this.datas = new Object[size];
     }
-    
-    /**
-     * 进栈
-     * 
-     * @param item
-     * @return E
-     */
+
     public void push(E item) {
         top ++;
-        System.out.println(top);
         if(top > size -1) {
-           throw new RuntimeException("栈满!"); 
+            //栈容量扩增
+            size <<= 1;
+            Object[] newDatas =  new Object[size];
+            System.arraycopy(datas , 0 , newDatas  , 0 , datas.length);
+            datas = newDatas;
         }
         datas[top] =item;
     }
 
-    /**
-     * 出栈
-     * 
-     * @return 
-     * @return E
-     */
     public E pop() {
         if(top == -1) {
             throw new RuntimeException("栈空!");  
         }
         return (E)datas[top--];
     }
-    
-    /**
-     * 栈置空
-     * 
-     * @return 
-     * @return boolean
-     */
+
     public boolean empty() {
         return top == -1;
     }
-    
-    
-    /**
-     * 查看栈顶元素但不移除
-     * @return 
-     * @return E
-     */
+
+
     public E peek(){
         if(top == -1) {
             throw new RuntimeException("栈空!");  
         }
         return (E)datas[top];
     }
-    
-    
+
     /**
      * 返回对象在堆栈中的位置,以 1为基数
      */
