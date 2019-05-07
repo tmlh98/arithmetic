@@ -11,11 +11,7 @@ package xyz.tmlh.airthmetic.stack;
 public class Main {
     
     public static void main(String[] args) {
-//        linkStack();
-        int a = 4 ;
-        a <<= 1;
-        System.out.println(a<< 1);
-        System.out.println(a);
+        arrayStack();
     }
 
     private static void linkStack() {
@@ -44,25 +40,14 @@ public class Main {
 
 
     private static void  arrayStack(){
-        ArrayStack<Integer> stack = new ArrayStack<Integer>();
+        ArrayStack<Integer> stack = new ArrayStack<Integer>(1);
         stack.push(1);
         stack.push(2);
         stack.push(3);
-        stack.push(5);
-        stack.push(4);
-        stack.push(6);
-        stack.push(7);
-        stack.push(8);
-        stack.push(9);
-        stack.push(10);
-        stack.push(10);
-        stack.push(10);
-        stack.push(10);
-        stack.push(10);
-        stack.push(10);
-        stack.push(10);
-
-        int search = stack.search(10);
+        
+        while (!stack.empty()) {
+            System.out.println(stack.pop());
+        }
     }
     
 }

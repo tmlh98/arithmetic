@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7762c6e6-c420-47c3-b825-07b6dffb41bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/ArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/Stack.java" afterDir="false" />
-    </list>
+    <list default="true" id="7762c6e6-c420-47c3-b825-07b6dffb41bb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/ArrayStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+            <state relative-caret-position="420">
+              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -269,6 +265,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -325,16 +322,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557191399165</updated>
-      <workItem from="1557191403192" duration="3230000" />
+      <workItem from="1557191403192" duration="3837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3230000" />
+    <option name="totallyTimeSpent" value="3837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="UI Designer" />
@@ -349,7 +345,7 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50053304" side_tool="true" weight="0.23969631" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.23969631" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.23969631" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -479,8 +475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/tmlh/airthmetic/stack/ArrayStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        <state relative-caret-position="420">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
         </state>
       </provider>
     </entry>
