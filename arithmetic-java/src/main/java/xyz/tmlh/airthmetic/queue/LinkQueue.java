@@ -17,7 +17,7 @@ public class LinkQueue<E> implements Queue<E> {
         public Node(E e) {
             this.e = e;
         }
-        public Node(E e, Node next) {
+        public Node(E e, Node<E> next) {
             this.e = e;
             this.next = next;
         }

@@ -2,7 +2,17 @@ package xyz.tmlh.airthmetic.queue;
 
 public class Main {
     public static void main(String[] args) {
-        testQueue(new LinkQueue<Integer>());
+        LinkedListQueue<String> queue = new LinkedListQueue<String>();
+        queue.add("1");
+        queue.add("2");
+        queue.add("3");
+        queue.add("4");
+        queue.add("5");
+        while (!queue.empty()) {
+            System.out.println(queue.poll());
+        }
+        System.out.println(queue.poll());
+        System.out.println(queue.remove());
     }
 
     private static void testQueue(Queue<?> q) {
