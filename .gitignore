@@ -9,7 +9,7 @@ arithmetic-java/target/**
 arithmetic-java/.settings/**
 **.project
 **.iml
-.idea/**
+**.idea/**
 **DS_Store
 
 
