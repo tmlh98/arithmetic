@@ -11,6 +11,19 @@ package xyz.tmlh.example.arr;
  */
 public class SparseArray {
 
+    public static void main(String[] args) {
+        int[][] chessArr = new int[11][11];
+        chessArr[1][2] = 1;
+        chessArr[2][2] = 2;
+        chessArr[4][5] = 2;
+        System.out.println("原始的二维数组~~");
+        print(chessArr);
+        System.out.println("稀疏数组~~~~");
+        print(sourceArrToSparseArr(chessArr));
+        System.out.println("原始数组数组~~~~");
+        print(sparseArrToDoubleArr(sourceArrToSparseArr(chessArr)));
+    }
+    
     /**
      * 二维数组转稀疏数组
      */
@@ -52,19 +65,6 @@ public class SparseArray {
             arr[sparseArr[i][0]][sparseArr[i][1]] = sparseArr[i][2];
         }
         return arr;
-    }
-
-    public static void main(String[] args) {
-        int[][] chessArr = new int[11][11];
-        chessArr[1][2] = 1;
-        chessArr[2][3] = 2;
-        chessArr[4][5] = 2;
-        System.out.println("原始的二维数组~~");
-        print(chessArr);
-        System.out.println("稀疏数组~~~~");
-        print(sourceArrToSparseArr(chessArr));
-        System.out.println("原始数组数组~~~~");
-        print(sparseArrToDoubleArr(sourceArrToSparseArr(chessArr)));
     }
 
     private static void print(int[][] chessArr) {
