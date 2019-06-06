@@ -1,4 +1,4 @@
-package xyz.tmlh.example.queue;
+package xyz.tmlh.example.stack;
 
 import java.util.ArrayList;
 import java.util.List;
