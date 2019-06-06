@@ -1,5 +1,7 @@
 package xyz.tmlh.airthmetic.stack;
 
+import java.util.Arrays;
+
 /**
  * <p>
  *   基于数组实现的顺序栈
@@ -57,6 +59,13 @@ public class ArrayStack<E> implements Stack<E>{
         }
         return (E)datas[top];
     }
+    
+    /**
+     * 返回栈的元素个数
+     */
+    public int size(){
+        return top + 1;
+    }
 
     /**
      * 返回对象在堆栈中的位置,以 1为基数
@@ -73,5 +82,12 @@ public class ArrayStack<E> implements Stack<E>{
         top =tmp;
         return index;
     }
+
+    @Override
+    public String toString() {
+        return "ArrayStack [datas=" + Arrays.toString(datas) + ", top=" + top + ", size=" + size + "]";
+    }
+
+    
     
 }

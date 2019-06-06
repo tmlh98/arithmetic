@@ -27,7 +27,7 @@ public interface Stack<E> {
     public E pop();
     
     /**
-     * 栈置空
+     * 栈是否为空
      * 
      * @return 
      * @return boolean
