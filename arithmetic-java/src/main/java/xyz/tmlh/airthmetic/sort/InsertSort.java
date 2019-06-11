@@ -23,19 +23,49 @@ public class InsertSort {
      * 属于稳定排序的一种（通俗地讲，就是两个相等的数不会交换位置） 。
      */
     public static void main(String[] args) {
-        int[] arr = ArraysUtil.genArray(20);
+        int[] arr = ArraysUtil.genArray(1000 * 100);
+        int[] arr2 = ArraysUtil.genArray(1000 * 100);
+        long startTime  = System.currentTimeMillis();
+        sort(arr2);
+        long end  = System.currentTimeMillis();
+        System.out.println("耗时:" +(end - startTime));
         
-        ArraysUtil.printArray(arr);
-        sort(arr);
-        ArraysUtil.printArray(arr);
+        
+        sort2(arr);
+        System.out.println("耗时:" +(System.currentTimeMillis() - end));
+        
     }
 
+    /*
+     * 从后往前移动
+     */
+    private static void sort2(int[] arr) {
+        //tmp: 保存待插入的元素 ,index:待插入的位置
+        int tmp ; 
+        for (int i = 1; i < arr.length; i++) {
+            tmp = arr[i];
+            int j = i - 1; // 前面的位置
+            //记录当前位置的值
+            // 比较。如果大于当前元素，则元素后移
+            while (j >= 0 && tmp < arr[j]) {
+                arr[j + 1] = arr [j];
+                j --;
+            }
+            
+            arr[j + 1] = tmp;
+        }
+        
+    }
+
+    /*
+     * 从前往后移动
+     */
     private static void sort(int[] arr) {
         //tmp: 保存待插入的元素 ,index:待插入的位置
         int tmp ; 
         for (int i = 1; i < arr.length; i++) {
             int index = -1;
-            tmp = arr[i];
+            tmp = arr[i];//要插入的数
             //寻找可插入位置
             for (int j = 0; j < i; j++) {
                 if(tmp < arr[j]) {
@@ -43,7 +73,6 @@ public class InsertSort {
                     break;
                 }
             }
-            
             if(index != -1) {
                 //元素后移
                 for (int k = i; k > index; k--) {

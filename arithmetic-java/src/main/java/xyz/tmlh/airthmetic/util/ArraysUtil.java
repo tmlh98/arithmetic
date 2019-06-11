@@ -26,7 +26,7 @@ public class ArraysUtil {
     public static int[] genArray(int len) {
         int[] arr = new int[len];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int)(Math.random() * 100);
+            arr[i] = (int)(Math.random() * 100000);
         }
         return arr;
     }

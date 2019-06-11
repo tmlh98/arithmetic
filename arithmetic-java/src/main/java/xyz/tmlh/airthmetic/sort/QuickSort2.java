@@ -1,6 +1,5 @@
 package xyz.tmlh.airthmetic.sort;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -13,9 +12,10 @@ import xyz.tmlh.airthmetic.util.ArraysUtil;
 public class QuickSort2 {
 
     public static void main(String[] args) {
-        int[] arr = ArraysUtil.genArray(20);
+        int[] arr = ArraysUtil.genArray(1000 * 100);
+        long startTime  = System.currentTimeMillis();
         quickSort(arr, 0, arr.length - 1);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("shellSort executes time : " + (System.currentTimeMillis() -startTime));
     }
 
     public static void quickSort(int[] arr, int startIndex, int endIndex) {

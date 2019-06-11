@@ -9,9 +9,6 @@ import xyz.tmlh.airthmetic.util.ArraysUtil;
  * <p>
  * 数组里有20个整数,取值范围为0-9,希望从小到大排序,时间复杂度O(n)
  * </p>
- *
- * @author TianXin
- * @since 2019年4月29日下午2:22:59
  */
 public class CountSort {
 
