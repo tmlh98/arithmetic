@@ -39,7 +39,7 @@ public class InsertSort {
     /*
      * 从后往前移动
      */
-    private static void sort2(int[] arr) {
+    public static void sort2(int[] arr) {
         //tmp: 保存待插入的元素 ,index:待插入的位置
         int tmp ; 
         for (int i = 1; i < arr.length; i++) {
