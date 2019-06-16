@@ -11,7 +11,7 @@ public class QuickSort {
         int[] arr = ArraysUtil.genArray(1000 * 100);
         long startTime  = System.currentTimeMillis();
         quickSort(arr, 0, arr.length - 1);
-        System.out.println("shellSort executes time : " + (System.currentTimeMillis() -startTime));
+        System.out.println("quickSort executes time : " + (System.currentTimeMillis() -startTime));
     }
 
     private static void quickSort(int[] arr, int startIndex, int endIndex) {
