@@ -8,7 +8,7 @@ import xyz.tmlh.airthmetic.util.ArraysUtil;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] arr = ArraysUtil.genArray(1000 * 100);
+        int[] arr = ArraysUtil.genArray(1000 * 1000 * 10);
         long startTime  = System.currentTimeMillis();
         quickSort(arr, 0, arr.length - 1);
         System.out.println("quickSort executes time : " + (System.currentTimeMillis() -startTime));

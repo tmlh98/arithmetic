@@ -25,11 +25,11 @@ public class Main {
         node3.setLeft(node6);
         node3.setRight(node7);
         BinaryTree binaryTree = new BinaryTree(root);
-        System.out.println("-------preOrder-------");
+        System.out.println("\n-------preOrder-------");
         binaryTree.preOrder();//1245367
-        System.out.println("-------infixOrder-------");
+        System.out.println("\n-------infixOrder-------");
         binaryTree.infixOrder();//4251367
-        System.out.println("-------postOrder-------");
+        System.out.println("\n-------postOrder-------");
         binaryTree.postOrder();//4526731
     }
 

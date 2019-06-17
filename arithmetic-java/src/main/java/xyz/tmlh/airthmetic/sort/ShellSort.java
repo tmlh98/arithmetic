@@ -13,7 +13,7 @@ import xyz.tmlh.airthmetic.util.ArraysUtil;
 public class ShellSort {
 
     public static void main(String[] args) {
-        int[] arr = ArraysUtil.genArray(1000 * 100);
+        int[] arr = ArraysUtil.genArray(1000 * 1000 * 10);
         long startTime  = System.currentTimeMillis();
         shellSort(arr);
         System.out.println("shellSort executes time : " + (System.currentTimeMillis() -startTime));

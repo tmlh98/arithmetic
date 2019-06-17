@@ -11,7 +11,7 @@ arithmetic-java/.settings/**
 **.iml
 **.idea/**
 **DS_Store
-
+*.rebel
 
 # Compiled class file
 *.class
