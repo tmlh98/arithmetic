@@ -1,4 +1,4 @@
-package xyz.tmlh.example.recursion;
+package xyz.tmlh.airthmetic.example.recursion;
 
 import java.util.Arrays;
 

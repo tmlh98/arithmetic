@@ -1,4 +1,4 @@
-package xyz.tmlh.example.linked;
+package xyz.tmlh.airthmetic.example.linked;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package xyz.tmlh.example.arr;
+package xyz.tmlh.airthmetic.example.arr;
 
 /*
  * 当一个数组中大部分元素为０，或者为同一个值的数组时，可以使用稀疏数组来保存该数组。  

@@ -1,4 +1,4 @@
-package xyz.tmlh.example.stack;
+package xyz.tmlh.airthmetic.example.stack;
 
 import java.util.ArrayList;
 import java.util.List;

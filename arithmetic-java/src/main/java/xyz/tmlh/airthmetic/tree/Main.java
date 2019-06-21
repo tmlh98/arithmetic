@@ -1,11 +1,15 @@
 package xyz.tmlh.airthmetic.tree;
 
+import xyz.tmlh.airthmetic.tree.print.BinaryTrees;
+
 public class Main {
    
     /*
-     *      1
-     *    2    3
-     *  4  5  6  7
+     *          ┌───1 ──┐
+                │       │
+             ┌─2 ─┐   ┌─3 ─┐
+             │    │   │    │
+            4     5  6     7 
      *  
      */
     public static void main(String[] args) {
@@ -31,6 +35,10 @@ public class Main {
         binaryTree.infixOrder();//4251367
         System.out.println("\n-------postOrder-------");
         binaryTree.postOrder();//4526731
+        
+        
+        System.out.println();
+        BinaryTrees.print(root);
     }
 
     

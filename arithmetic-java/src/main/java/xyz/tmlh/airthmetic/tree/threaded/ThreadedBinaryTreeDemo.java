@@ -1,7 +1,9 @@
-package xyz.tmlh.airthmetic.tree;
+package xyz.tmlh.airthmetic.tree.threaded;
 
 import xyz.tmlh.airthmetic.stack.ArrayStack;
 import xyz.tmlh.airthmetic.stack.Stack;
+import xyz.tmlh.airthmetic.tree.BinaryTree;
+import xyz.tmlh.airthmetic.tree.TreeNode;
 
 /**
  *  线索二叉树

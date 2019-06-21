@@ -1,9 +1,11 @@
 package xyz.tmlh.airthmetic.tree;
 
+import xyz.tmlh.airthmetic.tree.print.BinaryTreeInfo;
+
 /**
  * 树的节点
  */
-public class TreeNode {
+public class TreeNode implements BinaryTreeInfo{
 
     /**
      * 编号
@@ -66,6 +68,7 @@ public class TreeNode {
         System.out.print(this.no + "\t");
         
     }
+    
 
     public int getNo() {
         return no;
@@ -93,6 +96,26 @@ public class TreeNode {
 
     @Override
     public String toString() {
-        return "TreeNode [no=" + no + "]";
+        return no + " ";
     }
+
+    public Object root() {
+        return this;
+    }
+
+    public Object left(Object node) {
+        TreeNode treeNode =  (TreeNode)node;
+        return treeNode.getLeft();
+    }
+
+    public Object right(Object node) {
+        TreeNode treeNode =  (TreeNode)node;
+        return treeNode.getRight();
+    }
+
+    public Object string(Object node) {
+        TreeNode treeNode =  (TreeNode)node;
+        return treeNode;
+    }
+
 }
