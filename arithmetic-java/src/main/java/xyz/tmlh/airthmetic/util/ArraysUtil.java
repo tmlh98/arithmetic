@@ -54,6 +54,14 @@ public class ArraysUtil {
         return arr;
     }
     
+    public static int[] genArray0and100(int len) {
+        int[] arr = new int[len];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int)(Math.random() * 100);
+        }
+        return arr;
+    }
+    
     /**
      * 交换两个数组的位置
      */

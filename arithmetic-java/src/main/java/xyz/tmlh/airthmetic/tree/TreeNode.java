@@ -47,7 +47,7 @@ public class TreeNode implements BinaryTreeInfo{
         if (left != null) {
             left.infixOrder();
         }
-        System.out.print(this.no + "\t");
+        System.out.print(this.no + " ");
         if (right != null) {
             right.infixOrder();
         }
