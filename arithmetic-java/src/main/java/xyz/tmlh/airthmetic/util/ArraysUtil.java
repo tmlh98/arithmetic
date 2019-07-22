@@ -2,14 +2,6 @@ package xyz.tmlh.airthmetic.util;
 
 import java.util.Arrays;
 
-/**
- * <p>
- *   ArraysUtil
- * </p>
- *
- * @author TianXin
- * @since 2019年4月29日下午3:23:46
- */
 public class ArraysUtil {
 
     public static void printArray(int [] arr) {
