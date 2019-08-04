@@ -139,6 +139,9 @@ public class BinarySortTree {
     public SortNode getRoot() {
         return root;
     }
+    public void setRoot(SortNode root) {
+        this.root = root;
+    }
 
     public void infixOrder() {
         root.infixOrder();

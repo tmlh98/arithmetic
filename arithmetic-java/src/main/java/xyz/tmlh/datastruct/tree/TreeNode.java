@@ -24,6 +24,13 @@ public class TreeNode implements BinaryTreeInfo{
         this.no = no;
     }
 
+    public TreeNode(int no, TreeNode left, TreeNode right) {
+        super();
+        this.no = no;
+        this.left = left;
+        this.right = right;
+    }
+
     /**
      * 前序遍历
      */

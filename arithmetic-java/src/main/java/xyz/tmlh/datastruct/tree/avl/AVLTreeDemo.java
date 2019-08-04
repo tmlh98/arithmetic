@@ -15,6 +15,7 @@ public class AVLTreeDemo {
                         8
      */
     public static void main(String[] args) {
+        
       int[] arr = ArraysUtil.genArray0and100(50);
         //创建一个 AVLTree对象
         AVLTree avlTree = new AVLTree();
@@ -23,7 +24,6 @@ public class AVLTreeDemo {
             avlTree.add(new AVLNode(arr[i]));
         }
 //        System.out.println(show());
-        System.out.println();
         BinaryTrees.print(avlTree.getRoot());
         
     }
